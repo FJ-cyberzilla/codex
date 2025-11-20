@@ -1,0 +1,29 @@
+{
+  "name": "codex",
+  "version": "6.1.1",
+  "description": "Cyberzilla Codex - Enterprise Code Quality Gate",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FJ-cyberzilla/codex.git"
+  },
+  "keywords": [
+    "code-quality",
+    "linter",
+    "ci-cd",
+    "quality-gate",
+    "static-analysis"
+  ],
+  "author": "FJ-cyberzilla",
+  "license": "MIT",
+  "scripts": {
+    "install-linters": "npm install -g eslint prettier",
+    "analyze": "python codex.py .",
+    "analyze-fix": "python codex.py . --fix",
+    "interactive": "python codex.py --interactive"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
